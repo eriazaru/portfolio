@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    background-color: #021526;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width as necessary */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #86C232;
+  border-radius: 6px;
+  border: 2px solid #021526;
+}
+
+
+/* Scrollbar Button (Up Arrow) */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-color: transparent;
+  height: 8px;
+  width: 10px;
+  border-style: solid;
+  border-width: 0 4px 4px 4px; /* values should be half of the scrollbar width to achieve arrow appearance */
+  border-color: transparent transparent #555555 transparent;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+
+/* Scrollbar Button (Down Arrow) */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-color: transparent;
+  height: 8px;
+  width: 10px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px; /* Adjusted to reduce hourglass effect */
+  border-color: #555555 transparent transparent transparent;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+
+/* Optional: Ensure the buttons are visible and remove excess space */
+::-webkit-scrollbar-button {
+  display: block;
+  background: transparent;
+  height: 4px;
+  width: 10px;
+  margin: 0;
+  padding: 0;
+}
