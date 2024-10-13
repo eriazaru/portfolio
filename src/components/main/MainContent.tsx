@@ -6,7 +6,6 @@ const CertSection = lazy(() => import("../content/Certificate/CertificateContent
 const EducationSection = lazy(() => import("../content/Education/EducationContent"));
 const ExperienceSection = lazy(() => import("../content/Experience/ExperienceContent"));
 const ProjectSection = lazy(() => import("../content/Project/ProjectContent"));
-const ContactSection = lazy(() => import("../content/Contact/ContactContent"));
 
 // import { CertificateModal } from "../modals/CertificateModal";
 
@@ -16,7 +15,7 @@ function MainContent() {
 
     return (
         <>
-            <main>
+            <main className="bg-sky-950">
                 <div className='relative text-neutral-200 w-full max-w-screen-lg mx-auto'>
                     {/* Lazy Loaded Sections */}
                     <HeroSection/>
@@ -26,7 +25,6 @@ function MainContent() {
                     <TechSection/>
                     <CertSection/>
                     <ProjectSection/>
-                    <ContactSection/>
                 </div>
             </main>
         </>

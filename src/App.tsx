@@ -3,16 +3,12 @@
 // tailwind configuration documentation https://tailwindcss.com/docs/theme
 // https://pagedone.io/docs/animation
 // https://www.hover.dev/components/navigation
-// [color scheme: 
-// #61892F - darker green
-// #86C232 - lighter green
-// #222629 - black
-// #474B4F - darker grey
-// #6B6E70 - grey
+// https://tailwindflex.com/@samuel33/typewriter-animation-effect
 import DataProvider from './components/hooks/context/DataContextProvider';
 
 import NavigationBar from './components/header/navigation/NavigationBar';
 import MainContent from './components/main/MainContent';
+import FooterComponent from './components/footer/FooterComponent';
 
 function App() {
   return (
@@ -22,6 +18,9 @@ function App() {
           <NavigationBar/>
         </header>
           <MainContent/>
+        <footer>
+          <FooterComponent/>
+        </footer>
       </DataProvider>
     </>
   )

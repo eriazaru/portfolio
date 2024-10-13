@@ -1,28 +1,24 @@
 import EducationCard from "./components/EducationCard"
 import HeaderText from "../../custom/component/HeaderText"
-import { useRef } from "react";
+import { useAnimateOnVisible } from "../../hooks/useAnimateOnVisible";
+import { useData } from "../../hooks/context/DataContextProvider";
+import { Education } from "../../models/Content";
 
 function EducationContent(){
 
-    const sectionRef = useRef<HTMLDivElement>(null);
+    const { data } = useData();
+    const { sectionRef, visibleItems } = useAnimateOnVisible(data?.education || [], 400, 0.3);
 
     return(
         <>
         <section className='m-6' id='education' ref={sectionRef}>
-            <HeaderText number="01." title="Acads" justify='center' observerRef={sectionRef} animationDirection="left"/>
-            <div className="flex flex-wrap justify-center gap-5">
-                <EducationCard 
-                    name="Technological Institute of the Philippines" 
-                    year="2019 - 2023" 
-                    award="With Distinction"
-                    src="./src/assets/img/logo/tip.png"
-                />
-                <EducationCard 
-                    name="Nuestra Senora de Guia Academy of Marikina" 
-                    year="2017 - 2019" 
-                    award="With Honors"
-                    src="./src/assets/img/logo/nsdga.png"
-                />
+            <HeaderText number="01." title="Acads" justify='center' observerRef={sectionRef} animationDirection="left" threshold={0.3}/>
+            <div className="flex flex-wrap flex-row items-center justify-center mx-auto">
+                {data?.education.map((item: Education, index: number) => (
+                    <div key={index} className={`transition ${visibleItems[index] ? "animate-in fade-in slide-in-from-right-36" : "opacity-0"} delay-200 duration-500`}>
+                        <EducationCard item={item} key={index}/>
+                    </div>
+                ))}
             </div>
         </section>
         </>

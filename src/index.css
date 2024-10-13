@@ -6,8 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    background-color: #021526;
+@layer base {
+  body {
+    @apply bg-sky-950
+  }
 }
 
 /* Scrollbar Styles */
@@ -22,7 +24,7 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: #86C232;
   border-radius: 6px;
-  border: 2px solid #021526;
+  border: 2px solid #082f49;
 }
 
 

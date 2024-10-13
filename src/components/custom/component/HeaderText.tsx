@@ -6,9 +6,10 @@ interface HeaderProps {
     justify: 'start' | 'center' | 'end';
     observerRef?: React.RefObject<HTMLElement>;
     animationDirection: 'left' | 'right' | 'top';
+    threshold: number;
 }
 
-function HeaderText({ title, number, justify, observerRef, animationDirection }: HeaderProps) {
+function HeaderText({ title, number, justify, observerRef, animationDirection, threshold }: HeaderProps) {
     const justifyClass = {
         start: 'md:justify-start',
         center: 'md:justify-center',
@@ -37,13 +38,13 @@ function HeaderText({ title, number, justify, observerRef, animationDirection }:
         };
 
         const observer = new IntersectionObserver(observerCallback, {
-            threshold: 0.3,
+            threshold: threshold,
         });
 
         observer.observe(targetRef);
 
         return () => observer.disconnect();
-    }, [observerRef]);
+    }, [observerRef, threshold]);
 
     return (
         <div
@@ -54,7 +55,7 @@ function HeaderText({ title, number, justify, observerRef, animationDirection }:
                 <span className="font-mono pr-2 font-semibold">{number}</span>
                 {title}
             </h1>
-            <hr className="w-10 flex-grow h-[1px] mx-auto bg-gray-100 border-0 rounded md:flex-grow-0 md:w-72 md:my-10 dark:bg-gray-700" />
+            <hr className="w-10 flex-grow h-[1px] mx-auto bg-gray-100 border-0 rounded md:flex-grow-0 md:w-40 md:my-10 lg:w-72 dark:bg-gray-700" />
         </div>
     );
 }

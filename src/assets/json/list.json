@@ -274,7 +274,7 @@
         {
             "title": "Aquaponics Monitoring System",
             "stack": [{ "name" : "C++", "src": "cplus.svg"}, { "name" : "Arduino", "src": "arduino.svg"}],
-            "type": [""],
+            "type": ["Research", "Arduino Prototyping"],
             "description": "An Arduino project for monitoring key parameters in an Aquaponics System.",
             "link": "",
             "github": "https://github.com/eriazaru/aquaponics_monitoring_arduino"
@@ -282,23 +282,23 @@
         {
             "title": "Mathemata: A Math 1 Mobile Learning Game Application for Estimating and Measuring Non-Standard Units of Measurements Utilizing Durstenfeld Shuffle Algorithm",
             "stack": [{ "name" : "Unity", "src": "unity.svg"}, { "name" : "C#", "src": "csharp.svg"}, { "name" : "Figma", "src": "figma.svg"}],
-            "type": [""],
+            "type": ["Research", "Unity Mobile Game Application"],
             "description": "A project under the collaboration of TIP QC and Knowledge Channel. The mobile game, Mathemata, aims to create an engaging and fun learning experience for Grade 1 students through a gamified approach.",
-            "link": "",
+            "link": "https://www.figma.com/proto/hYPP4U0xCZ4rWYinrGOg7G/MathDali%3A-Topic-2?node-id=632-1240&starting-point-node-id=632%3A1240&t=Gtjie64a90pkPogH-1",
             "github": "https://github.com/eriazaru/MatheMata"
         },
         {
             "title": "Sentiment Analysis of Tweets About Online Classes During Covid-19 Pandemic in the Philippines Using Naïve Bayes Algorithm",
             "stack": [{ "name" : "Python", "src": "python.svg"}],
-            "type": [""],
+            "type": ["Web Scraping", "Data Processing", "Sentiment Analysis"],
             "description": "In the study web scraping was used to get tweets that is relevant to the topic and date ranges (start of online classes and pandemic period). The proponents then used Naïve Bayes Algorithm to produce sentiment analysis results.",
             "link": "",
             "github": "https://github.com/lvvCath/Twitter-Sentiment-Analysis"
         },
         {
             "title": "Halu Mobile App Prototype",
-            "stack": ["Figma", "UX/UI Designing", "Prototyping"],
-            "type": [""],
+            "stack": [{ "name" : "Figma", "src": "figma.svg"}],
+            "type": ["Research", "UX/UI Designing", "Prototyping"],
             "description": "A prototype for local marketplace mobile application.",
             "link": "https://www.figma.com/proto/8eTAujjciAQTaO3UPmovlj/Prototype?node-id=70-69&node-type=canvas&t=Qbyhuhzeo8JoAsMA-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=70%3A69&show-proto-sidebar=1",
             "github": ""
@@ -306,16 +306,16 @@
         {
             "title": "Personality Test",
             "stack": [{ "name" : "Python", "src": "python.svg"}, { "name" : "Sqlite", "src": "sqlite.svg"}],
-            "type": [""],
+            "type": ["Software Development"],
             "description": "A personality test created in python using PyQt and stores data in Sqlite.",
-            "link": "yeah",
+            "link": "",
             "github": "https://github.com/eriazaru/PersonalityTest"
         },
         {
             "title": "Recipe Mobile App",
             "stack": [{ "name" : "React", "src": "react.svg"}],
-            "type": [""],
-            "description": "A simple mobile application to that stores recipe. An introductory project to mobile application development.",
+            "type": ["React Native", "Mobile Development"],
+            "description": "A simple mobile application that stores recipes. An introductory project to mobile application development.",
             "link": "",
             "github": "https://github.com/eriazaru/ProjectSubmission"
         }
@@ -334,7 +334,14 @@
             "role": "Artificial Intelligence and Computer Programming Internship",
             "type": "Internship",
             "duration": "February 2023 - April 2023",
-            "description": ["Trained and fine-tuned computer vision models using Pytorch, improving model accuracy and performance through hyperparameter optimization.", "Developed and enhanced mobile application features using React Native, ensuring a responsive and user-friendly interface.", "", "", ""]
+            "description": ["Trained and fine-tuned computer vision models using Pytorch, improving model accuracy and performance through hyperparameter optimization.", "Developed and enhanced mobile application features using React Native, ensuring a responsive and user-friendly interface.", "Integrated AI models into mobile application, enabling advanced functionalities and real-time data processing.", "Conducted and documented beta testing to identify and resolve issues, ensuring application stability and enhancing user experience."]
+        },
+        {
+            "company": "Nuestra Senora de Guia",
+            "role": "Computer Laboratory Assistant Intern",
+            "type": "Internship",
+            "duration": "February 2023 - April 2023",
+            "description": ["Performed troubleshooting and repair of computer hardware and software issues, ensuring smooth operation of the school's computer systems.", "Provided technical support to students, guiding them in the use of computers and related software applications.", "Organized and maintained school records, including filing, sorting, and managing school documents to ensure efficient administrative processes."]
         }
     ],
     "education": [
@@ -342,25 +349,29 @@
             "school": "National University - Fairview",
             "program":"Bachelor of Science in Information Technology",
             "duration": "March 2024 - June 2024",
-            "honor": ""
+            "honor": "",
+            "src": "nu.png"
         },
         {
             "school": "National University - Fairview",
             "program":"Bachelor of Arts in Communication",
             "duration": "November 2023 - January 2024",
-            "honor": "Dean's Lister"
+            "honor": "Dean's Lister",
+            "src": "nu.png"
         },
         {
-            "school": "Technological Institute of the Philippines - Quezon City",
+            "school": "Technological Institute of the Philippines",
             "program":"Bachelor of Science in Computer Science",
             "duration": "Graduated - September 2023",
-            "honor": "With Distinction"
+            "honor": "With Distinction",
+            "src": "tip.png"
         },
         {
             "school": "Nuestra Senora de Guia Academy of Marikina",
-            "program":"SHS - ICT",
+            "program":"Senior High School - ICT",
             "duration": "2017 - 2019",
-            "honor": "With Honors"
+            "honor": "With Honors",
+            "src": "nsdga.png"
         }
     ]
 }

@@ -8,7 +8,7 @@ function HamburgerMenu({ isOpen, toggleMenu }: HamburgerMenuProps){
   return (
     <button
       onClick={toggleMenu}
-      className="flex flex-col justify-center items-center transition-all duration-100 md:hidden"
+      className="flex flex-col justify-center items-center transition-all duration-100 lg:hidden"
     >
       <span
         className={`bg-slate-200 block transition-all duration-300 ease-out 

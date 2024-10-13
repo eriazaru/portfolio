@@ -39,7 +39,7 @@ export interface Projects {
 export interface Experience {
     company: string;
     role: string;
-    type: "Contract" | "Part-time" | "Freelance" | "Internship" | "Full-time";
+    type: string;
     duration: string;
     description?: string[];
 
@@ -50,4 +50,5 @@ export interface Education {
     program: string;
     duration: string;
     honor?: string;
+    src: string;
 }
