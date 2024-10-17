@@ -61,7 +61,7 @@ export function CertificateModal({
 
     return (
         <div onClick={handleOverlayClick} className="fixed inset-0 z-50 w-full h-full flex items-start justify-center bg-black bg-opacity-60 overflow-y-auto">
-            <div className={`${isExiting ? 'animate-out fade-out slide-out-to-top-36 ' : ''} h-auto w-[55rem] m-4 md:place-items-center border border-lime-600 bg-neutral-900 rounded-lg cursor animate-in fade-in slide-in-from-top-36 duration-700`}>
+            <div className={`${isExiting ? 'animate-out fade-out slide-out-to-top-36 ' : ''} h-auto w-[55rem] m-4 border border-lime-600 bg-neutral-900 rounded-lg cursor animate-in fade-in slide-in-from-top-36 duration-700`}>
                 <div className="flex justify-end items-center text-center p-2 md:p-5 border-b-[1px] border-lime-600 inset-0">
                     <ReactSVG
                         beforeInjection={(svg) => {
