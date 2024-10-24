@@ -10,7 +10,7 @@ interface ProjectCardProps{
 function ProjectCard ({ project, stack, type }: ProjectCardProps) {
     return(
         <>
-            <div className="flex-grow w-full h-50 md:w-[48rem] lg:w-[50rem] bg-sky-900 p-5 shadow-md shadow-neutral-950/40">
+            <div className="flex-grow w-full h-50 md:w-[48rem] lg:w-[50rem] bg-gradient-to-r from-cyan-800 to-sky-900 p-5 shadow-md shadow-neutral-950/40">
                 <div className="flex justify-between items-start  pt-2 pb-4">
                     <ReactSVG
                         beforeInjection={(svg) => {
@@ -22,7 +22,7 @@ function ProjectCard ({ project, stack, type }: ProjectCardProps) {
                         <a href={project.github} target="_blank" className={`${project.github ? "": 'hidden'}`}>
                             <ReactSVG
                             beforeInjection={(svg) => {
-                                svg.classList.add('size-10', 'fill-slate-200', 'p-2', 'ease-in-out', 'duration-200', 'md:hover:-translate-y-[4px]', 'hover:fill-lime-400');
+                                svg.classList.add('size-10', 'fill-slate-200', 'p-2', 'ease-in-out', 'duration-200', 'md:hover:-translate-y-[4px]', 'hover:fill-amber-400');
                             }}
                                 src="./src/assets/icons/technology/github.svg"
                             />
@@ -30,7 +30,7 @@ function ProjectCard ({ project, stack, type }: ProjectCardProps) {
                         <a href={project.link} target="_blank" className={`${project.link ? "": 'hidden'}`}>
                             <ReactSVG
                             beforeInjection={(svg) => {
-                                svg.classList.add('size-10', 'fill-slate-200', 'p-2', 'ease-in-out', 'duration-200', 'md:hover:-translate-y-[4px]', 'hover:fill-lime-400');
+                                svg.classList.add('size-10', 'fill-slate-200', 'p-2', 'ease-in-out', 'duration-200', 'md:hover:-translate-y-[4px]', 'hover:fill-amber-400');
                             }}
                                 src="./src/assets/icons/components/external-link.svg"
                             />

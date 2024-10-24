@@ -12,14 +12,14 @@ function EducationContent(){
     return(
         <>
         <section className='m-6' id='education' ref={sectionRef}>
-            <HeaderText number="01." title="Acads" justify='center' observerRef={sectionRef} animationDirection="left" threshold={0.3}/>
-            <div className="flex flex-wrap flex-row items-center justify-center mx-auto">
+            <HeaderText number="01." title="Acads" justify='center' observerRef={sectionRef} animationDirection="left" threshold={0.8}/>
+            <ol className="relative border-s mx-5 border-gray-200">                  
                 {data?.education.map((item: Education, index: number) => (
                     <div key={index} className={`transition ${visibleItems[index] ? "animate-in fade-in slide-in-from-right-36" : "opacity-0"} delay-200 duration-500`}>
                         <EducationCard item={item} key={index}/>
                     </div>
                 ))}
-            </div>
+            </ol>
         </section>
         </>
     )

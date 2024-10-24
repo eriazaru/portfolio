@@ -8,23 +8,17 @@
 
 @layer base {
   body {
-    @apply bg-sky-950
+    @apply bg-gradient-to-t from-sky-950 via-sky-950 to-slate-950
   }
 }
 
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
-  width: 8px; /* Adjust width as necessary */
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
+  @apply w-[6.5px] bg-slate-900
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #86C232;
-  border-radius: 6px;
-  border: 2px solid #082f49;
+  @apply rounded-sm bg-orange-500
 }
 
 
@@ -36,7 +30,7 @@
   border-style: solid;
   border-width: 0 4px 4px 4px; /* values should be half of the scrollbar width to achieve arrow appearance */
   border-color: transparent transparent #555555 transparent;
-  margin: 0;
+  margin: 0;  
   padding: 0;
 }
 

@@ -18,7 +18,7 @@ function TechnologyContent() {
                         key={index}
                         className={`tech-item grid grid-flow-row items-center justify-center py-2 transition-opacity  ${visibleItems[index] ? 'animate-in fade-in zoom-in' : 'opacity-0'} duration-500`}
                     >
-                        <ReactSVG className="rounded-lg size-20 md:size-28 bg-[#61892F] overflow-hidden transition-all"
+                        <ReactSVG className="rounded-lg size-20 md:size-28 bg-cyan-900 overflow-hidden transition-all"
                             beforeInjection={(svg) => {
                                 svg.classList.add('size-20', 'md:size-28', 'fill-slate-200', 'p-5', 'hover:scale-110', 'ease-in', 'duration-200');
                             }}

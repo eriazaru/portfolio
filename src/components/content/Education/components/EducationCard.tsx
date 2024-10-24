@@ -7,23 +7,13 @@ interface CardProps {
 function EducationCard({ item }: CardProps){
     return(
         <>
-            <div className='m-2 flex md:flex-col items-center justify-center w-[20rem] lg:w-[25rem] h-60 md:h-72 lg:h-80 p-2 bg-sky-900 shadow-md hover:scale-105 transition-transform duration-300'>
-                <img className="mt-5 mb-2 object-scale-down w-20 md:w-28 lg:w-36 duration-200" src={`src/assets/img/logo/${item.src}`} alt="school logo"/>
-                <ul className="text-center">
-                    <li className="font-semibold font-poppins text-md">
-                        {item.program}
-                    </li>
-                    <li className="italic text-sm">
-                        {item.school}
-                    </li>
-                    <li className="font-medium font-sans text-xs">
-                        {item.honor}
-                    </li>
-                    <li className="font-mono text-xs">
-                        {item.duration}
-                    </li>
-                </ul>
-            </div>
+            <li className="mb-10 ms-4">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1 -start-1.5 border border-white"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-gray-400">{item.duration}</time>
+                <h3 className="text-lg font-semibold text-sky-400">{item.program}</h3>
+                <h2 className="text-base italic font-medium text-amber-500">{item.honor}</h2>
+                <p className="mb-4 text-base font-normal text-gray-200">{item.school}</p>
+            </li>
         </>
     )
 }

@@ -53,21 +53,21 @@ function NavigationBar() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <nav className={`fixed w-full ${menuOpen ? 'h-full right-0' : ''} bg-sky-950/[.95] backdrop-filter backdrop-blur flex items-center justify-end px-5 ${atTop ? 'h-20' : 'h-16  shadow-xl'} ${visible ? 'top-0' : '-top-20'} transition-all ease-in-out duration-300 delay-100 sm:overflow-y-auto z-50`}>
+    <nav className={`fixed w-full ${menuOpen ? 'h-full right-0 overflow-y-auto' : ''} bg-slate-950/[.95] backdrop-filter backdrop-blur flex items-center justify-end px-5 ${atTop ? 'h-20' : 'h-16 shadow-xl'} ${visible ? 'top-0' : '-top-20'} transition-all ease-in-out duration-300 delay-100 sm:overflow-y-auto z-50`}>
       <ol className={`${menuOpen ? 'grid grid-cols-1 gap-10' : 'hidden'} font-mono font-base text-sm text-neutral-500 flex-col  m-5 lg:flex lg:flex-row md:gap-x-10 animate-in fade-in slide-in-from-top-9 duration-500`}>
         {data?.links.map(({ label, href, id }: Link) => (
           <li key={id} className='justify-self-end'>
             <a
               href={href}
-              className={`ease-in-out duration-200 hover:text-lime-500 ${activeLink === id ? 'text-lime-500' : 'text-neutral-300'}`}
+              className={`ease-in-out duration-200 hover:text-amber-400 ${activeLink === id ? 'text-amber-500' : 'text-neutral-300'}`}
               onClick={() => handleLinkClick(id)}
             >
               {label}
             </a>
           </li>
         ))}
-        <div className="ease-in-out duration-200 text-lime-500 justify-self-end hover:scale-110">
-          <a className='border-2 rounded-lg border-lime-500 py-2 px-4' href="https://drive.google.com/file/d/1jqYY_Nw7SZU2Za_75FRJ-vulSE4gzrGR/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+        <div className="ease-in-out duration-200 text-amber-400 justify-self-end hover:scale-110 hover:text-amber-500">
+          <a className='border-2 rounded-lg border-amber-400 py-2 px-4 hover:border-amber-500' href="https://drive.google.com/file/d/1jqYY_Nw7SZU2Za_75FRJ-vulSE4gzrGR/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </ol>
       <div className={`transition-all ease-in-out duration-200 absolute ${atTop ? 'top-8 right-5': 'top-6 right-5'}`}>

@@ -61,8 +61,8 @@ export function CertificateModal({
 
     return (
         <div onClick={handleOverlayClick} className="fixed inset-0 z-50 w-full h-full flex items-start justify-center bg-black bg-opacity-60 overflow-y-auto">
-            <div className={`${isExiting ? 'animate-out fade-out slide-out-to-top-36 ' : ''} h-auto w-[55rem] m-4 border border-lime-600 bg-neutral-900 rounded-lg cursor animate-in fade-in slide-in-from-top-36 duration-700`}>
-                <div className="flex justify-end items-center text-center p-2 md:p-5 border-b-[1px] border-lime-600 inset-0">
+            <div className={`${isExiting ? 'animate-out fade-out slide-out-to-top-36 ' : ''} h-auto w-[55rem] m-4 border border-amber-600 bg-slate-950 rounded-lg cursor animate-in fade-in slide-in-from-top-36 duration-700`}>
+                <div className="flex justify-end items-center text-center p-2 md:p-5 border-b-[1px] border-amber-600 inset-0">
                     <ReactSVG
                         beforeInjection={(svg) => {
                             svg.classList.add('size-6', 'ease-in-out', 'duration-200', 'hover:scale-110','cursor-pointer', 'md:size-9');
@@ -112,7 +112,7 @@ export function CertificateModal({
                         {certificates.map((_, index) => (
                             <button
                                 key={index}
-                                className={`w-3 h-3 rounded-full ${selectedCertificateIndex === index ? 'bg-white' : 'bg-gray-400'}`}
+                                className={`w-3 h-3 rounded-full ${selectedCertificateIndex === index ? 'bg-amber-400' : 'bg-gray-400'}`}
                                 onClick={() => goToSlide(index)}
                             />
                         ))}

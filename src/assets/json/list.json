@@ -265,8 +265,8 @@
         ],
     "links": [
         { "label": "Experience", "href": "#jobs", "id": "jobs" },
+        { "label": "Technology", "href": "#tech", "id": "tech" },
         { "label": "Education", "href": "#education", "id": "education" },
-        { "label": "Skills", "href": "#skills", "id": "skills" },
         { "label": "Certifications", "href": "#certifications", "id": "certifications" },
         { "label": "Projects", "href": "#projects", "id": "projects" }
     ],
@@ -331,7 +331,7 @@
         },
         {
             "company": "Cawil.AI",
-            "role": "Artificial Intelligence and Computer Programming Internship",
+            "role": "Artificial Intelligence and Computer Programming Interns",
             "type": "Internship",
             "duration": "February 2023 - April 2023",
             "description": ["Trained and fine-tuned computer vision models using Pytorch, improving model accuracy and performance through hyperparameter optimization.", "Developed and enhanced mobile application features using React Native, ensuring a responsive and user-friendly interface.", "Integrated AI models into mobile application, enabling advanced functionalities and real-time data processing.", "Conducted and documented beta testing to identify and resolve issues, ensuring application stability and enhancing user experience."]
@@ -340,7 +340,7 @@
             "company": "Nuestra Senora de Guia",
             "role": "Computer Laboratory Assistant Intern",
             "type": "Internship",
-            "duration": "February 2023 - April 2023",
+            "duration": "May 2019 – June 2019",
             "description": ["Performed troubleshooting and repair of computer hardware and software issues, ensuring smooth operation of the school's computer systems.", "Provided technical support to students, guiding them in the use of computers and related software applications.", "Organized and maintained school records, including filing, sorting, and managing school documents to ensure efficient administrative processes."]
         }
     ],
@@ -367,8 +367,8 @@
             "src": "tip.png"
         },
         {
-            "school": "Nuestra Senora de Guia Academy of Marikina",
-            "program":"Senior High School - ICT",
+            "school": "Nuestra Señora de Guia Academy of Marikina",
+            "program":"Senior High School - Information, Communication and Technology",
             "duration": "2017 - 2019",
             "honor": "With Honors",
             "src": "nsdga.png"

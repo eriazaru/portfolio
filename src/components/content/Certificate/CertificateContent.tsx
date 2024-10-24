@@ -57,7 +57,7 @@ function CertificateContent() {
                         <div
                             key={index}
                             onClick={() => openModal(group, 0)} // Always open the first certificate in the group
-                            className={`pb-2 items-center justify-center text-center bg-neutral-900 max-w-36 md:max-w-72 lg:w-1/2 h-auto outline-lime-500 outline-1 hover:outline hover:drop-shadow-2xl hover:-translate-y-2 hover:cursor-pointer ${visibleItems[index] ? 'animate-in fade-in slide-in-from-bottom-36' : 'opacity-0'} duration-500`}
+                            className={`pb-2 items-center justify-center text-center bg-slate-900 max-w-36 md:max-w-72 lg:w-1/2 h-auto outline-amber-400 outline-1 hover:outline hover:drop-shadow-2xl hover:-translate-y-2 hover:cursor-pointer ${visibleItems[index] ? 'animate-in fade-in slide-in-from-bottom-36' : 'opacity-0'} duration-500`}
                         >
                             <img className='align-center md:max-h-44 w-auto md:w-72' src={`./src/assets/certificate/${certificates[0].type}/${certificates[0].src}`} alt={certificates[0].name} />
                             <span className='align-center w-auto font-poppins font-base text-xs md:text-base pb-2'>{certificates[0].group}</span>

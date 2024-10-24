@@ -15,14 +15,14 @@ function MainContent() {
 
     return (
         <>
-            <main className="bg-sky-950">
+            <main>
                 <div className='relative text-neutral-200 w-full max-w-screen-lg mx-auto'>
                     {/* Lazy Loaded Sections */}
                     <HeroSection/>
                     <AboutSection/>
                     <ExperienceSection/>
-                    <EducationSection/>
                     <TechSection/>
+                    <EducationSection/>
                     <CertSection/>
                     <ProjectSection/>
                 </div>

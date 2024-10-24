@@ -4,6 +4,8 @@
 // https://pagedone.io/docs/animation
 // https://www.hover.dev/components/navigation
 // https://tailwindflex.com/@samuel33/typewriter-animation-effect
+// Background Gradients and Effects https://bg.ibelick.com/
+
 import DataProvider from './components/hooks/context/DataContextProvider';
 
 import NavigationBar from './components/header/navigation/NavigationBar';
