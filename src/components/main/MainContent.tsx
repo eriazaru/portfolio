@@ -2,7 +2,7 @@ import { lazy } from "react";
 const HeroSection = lazy(() => import("../content/Hero/HeroContent"));
 const AboutSection = lazy(() => import("../content/About/AboutContent"));
 const TechSection = lazy(() => import("../content/Technology/TechnologyContent"));
-const CertSection = lazy(() => import("../content/Certificate/CertificateContent"));
+import CertificateContent from "../content/Certificate/CertificateContent";
 const EducationSection = lazy(() => import("../content/Education/EducationContent"));
 const ExperienceSection = lazy(() => import("../content/Experience/ExperienceContent"));
 const ProjectSection = lazy(() => import("../content/Project/ProjectContent"));
@@ -23,7 +23,7 @@ function MainContent() {
                     <ExperienceSection/>
                     <TechSection/>
                     <EducationSection/>
-                    <CertSection/>
+                    <CertificateContent/>
                     <ProjectSection/>
                 </div>
             </main>

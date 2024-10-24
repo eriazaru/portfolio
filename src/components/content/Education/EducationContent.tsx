@@ -12,7 +12,7 @@ function EducationContent(){
     return(
         <>
         <section className='m-6' id='education' ref={sectionRef}>
-            <HeaderText number="01." title="Acads" justify='center' observerRef={sectionRef} animationDirection="left" threshold={0.8}/>
+            <HeaderText number="01." title="Acads" justify='center' observerRef={sectionRef} animationDirection="left" threshold={0.2}/>
             <ol className="relative border-s mx-5 border-gray-200">                  
                 {data?.education.map((item: Education, index: number) => (
                     <div key={index} className={`transition ${visibleItems[index] ? "animate-in fade-in slide-in-from-right-36" : "opacity-0"} delay-200 duration-500`}>
