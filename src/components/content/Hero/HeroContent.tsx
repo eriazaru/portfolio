@@ -47,7 +47,7 @@ function HeroContent() {
                 </h2>
                 <a
                     href="#about"
-                    className={`absolute bottom-16 md:bottom-24 bg-amber-500 py-3 px-5 font-bold text-sm rounded-full ${showContinue ? "opacity-100" : "opacity-0"} text-white animate-in fade-in slide-in-from-top-10 duration-300`}
+                    className={`absolute bottom-16 md:bottom-24 bg-amber-500 py-3 px-5 font-bold text-sm md:text-base rounded-full ${showContinue ? "opacity-100" : "opacity-0"} text-white animate-in fade-in slide-in-from-top-10 duration-300`}
                 >
                     Continue
                     <span className="absolute inset-0 rounded-full border-[1px] md:border-2 border-amber-500 animate-ping"></span>
