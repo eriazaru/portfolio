@@ -2,17 +2,12 @@ import { lazy } from "react";
 const HeroSection = lazy(() => import("../content/Hero/HeroContent"));
 const AboutSection = lazy(() => import("../content/About/AboutContent"));
 const TechSection = lazy(() => import("../content/Technology/TechnologyContent"));
-import CertificateContent from "../content/Certificate/CertificateContent";
+const CertSection = lazy(() => import("../content/Certificate/CertificateContent"));
 const EducationSection = lazy(() => import("../content/Education/EducationContent"));
 const ExperienceSection = lazy(() => import("../content/Experience/ExperienceContent"));
 const ProjectSection = lazy(() => import("../content/Project/ProjectContent"));
 
-// import { CertificateModal } from "../modals/CertificateModal";
-
-
-
 function MainContent() {
-
     return (
         <>
             <main>
@@ -23,7 +18,7 @@ function MainContent() {
                     <ExperienceSection/>
                     <TechSection/>
                     <EducationSection/>
-                    <CertificateContent/>
+                    <CertSection/>
                     <ProjectSection/>
                 </div>
             </main>

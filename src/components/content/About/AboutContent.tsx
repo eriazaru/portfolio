@@ -1,15 +1,39 @@
+import { useEffect, useRef, useState} from "react";
 import HeaderText from "../../custom/component/HeaderText"
 
 function AboutContent(){
 
-    
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const entry = entries[0];
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                }
+            },
+            { threshold: 0.3 } 
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+    
     return(
         <>
-            <section className="m-6 select-none">
-                <HeaderText number="01." title="About Me" justify="start" animationDirection="left" threshold={0.3}/>
+            <section id="about" className="m-6 select-none" ref={sectionRef}>
+                <HeaderText observerRef={sectionRef} number="01." title="About Me" justify="start" animationDirection="left" threshold={0.3}/>
                 <div className="flex flex-col-reverse items-center lg:items-start justify-start lg:flex-row gap-9">
-                    <div className="gap-2 text-slate-200">
+                    <div className={`gap-2 text-slate-200 ${isVisible ? "animate-in fade-in slide-in-from-top-28" : "opacity-0"} duration-300 delay-500`}>
                         <p className="md:px-12 lg:p-0 tracking-normal text-justify font-poppins text-base text-white font-normal">
                         Hello! I am <span className="text-yellow-500 font-semibold">Eleazar Moses</span>, I like drawing digitally and to design and create things. I am currently practicing and honing my skills in web development.
                         </p>
@@ -29,7 +53,7 @@ function AboutContent(){
                             </ol>
                         </div>
                     </div>
-                    <img src="src/assets/img/profile.jpg" alt="My Profile" className=" h-auto w-44 md:w-56 lg:w-60 rounded-md lg:justify-self-center outline outline-1 outline-offset-8 outline-white"/>
+                    <img src="src/assets/img/profile.jpg" alt="My Profile" className={`h-auto w-44 md:w-56 lg:w-60 rounded-md lg:justify-self-center outline outline-1 outline-offset-8 outline-white ${isVisible ? "animate-in fade-in slide-in-from-top-28" : "opacity-0"} duration-300 delay-400`}/>
                 </div>
             </section>
         </>
