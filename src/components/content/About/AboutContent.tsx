@@ -43,7 +43,7 @@ function AboutContent(){
                         <p className="md:px-12 lg:p-0 tracking-normal text-pretty font-poppins text-base text-white font-normal">You can reach me out through this <a className="underline underline-offset-2 decoration-yellow-500" href="mailto:cabarleseleazarmoses@gmail.com"><span className="text-yellow-500 font-semibold">cabarleseleazarmoses@gmail.com</span></a> or through my phone number here: <span className="text-yellow-500 font-semibold">(+61) 0480620058</span></p>
                         <div className="pt-9 md:px-12 lg:px-0">
                             <h2 className="font-poppins text-base pb-4">Technologies I have been tinkering with recently:</h2>
-                            <ol className="list-image-[url(./src/assets/icons/components/list-arrow.svg)] list-inside grid grid-cols-2 font-mono items-center justify-center text-sky-500">
+                            <ol className="list-image-[url(/src/assets/icons/components/list-arrow.svg)] list-inside grid grid-cols-2 font-mono items-center justify-center text-sky-500">
                                 <li >HTML</li>
                                 <li>Tailwind CSS</li>
                                 <li>ReactJS</li>
