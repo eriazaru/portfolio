@@ -331,7 +331,7 @@
         },
         {
             "company": "Cawil.AI",
-            "role": "Artificial Intelligence and Computer Programming Interns",
+            "role": "Artificial Intelligence and Computer Programming Intern",
             "type": "Internship",
             "duration": "February 2023 - April 2023",
             "description": ["Trained and fine-tuned computer vision models using Pytorch, improving model accuracy and performance through hyperparameter optimization.", "Developed and enhanced mobile application features using React Native, ensuring a responsive and user-friendly interface.", "Integrated AI models into mobile application, enabling advanced functionalities and real-time data processing.", "Conducted and documented beta testing to identify and resolve issues, ensuring application stability and enhancing user experience."]
