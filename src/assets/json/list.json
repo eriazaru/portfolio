@@ -323,7 +323,7 @@
     "experience": [
         {
             "company": "Quick Site Guru",
-            "role": "Full Stack Web Developer Intern",
+            "role": "Software Developer",
             "type": "Internship",
             "duration": "Present",
             "description": ["Used Material UI and Tailwind CSS to ensure a responsive and modern design.", "Created and implemented new features within the website to enhance user experience.", "Revamped the frontend based on UI/UX team designs for improved usability and aesthetics.", "Worked on the Firebase backend to manage and store data, ensuring data integrity and security."]
